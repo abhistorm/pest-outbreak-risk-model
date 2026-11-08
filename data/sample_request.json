@@ -1,0 +1,14 @@
+{
+  "features": {
+    "p064_pest_outbreak_risk_model_soil_ph": 0.0,
+    "p064_pest_outbreak_risk_model_nitrogen_ppm": 0.0,
+    "p064_pest_outbreak_risk_model_phosphorus_ppm": 0.0,
+    "p064_pest_outbreak_risk_model_potassium_ppm": 0.0,
+    "p064_pest_outbreak_risk_model_soil_moisture_pct": 0.0,
+    "p064_pest_outbreak_risk_model_sunlight_hours": 0.0,
+    "p064_pest_outbreak_risk_model_temperature_c": 0.0,
+    "p064_pest_outbreak_risk_model_rainfall_mm": 0.0,
+    "p064_pest_outbreak_risk_model_seed_density": 0.0,
+    "p064_pest_outbreak_risk_model_pest_pressure": 0.0
+  }
+}

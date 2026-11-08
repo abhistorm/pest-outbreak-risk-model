@@ -1,0 +1,54 @@
+{
+  "id": "064",
+  "slug": "064-pest-outbreak-risk-model",
+  "name": "Pest Outbreak Risk Model",
+  "domain": "Agriculture & food systems",
+  "domain_slug": "agriculture",
+  "task_type": "classification",
+  "target": "p064_pest_outbreak_risk_model_outcome_label",
+  "features": [
+    "p064_pest_outbreak_risk_model_soil_ph",
+    "p064_pest_outbreak_risk_model_nitrogen_ppm",
+    "p064_pest_outbreak_risk_model_phosphorus_ppm",
+    "p064_pest_outbreak_risk_model_potassium_ppm",
+    "p064_pest_outbreak_risk_model_soil_moisture_pct",
+    "p064_pest_outbreak_risk_model_sunlight_hours",
+    "p064_pest_outbreak_risk_model_temperature_c",
+    "p064_pest_outbreak_risk_model_rainfall_mm",
+    "p064_pest_outbreak_risk_model_seed_density",
+    "p064_pest_outbreak_risk_model_pest_pressure"
+  ],
+  "model_key": "hist-gradient-boosting",
+  "model_class": "HistGradientBoostingClassifier",
+  "serving": "Gradio",
+  "extension_focus": "DuckDB analytical queries",
+  "seed": 202664,
+  "rows": 453644,
+  "dataset_bytes": 39467571,
+  "model_training": {
+    "source": "synthetic dataset bundled with this project",
+    "sample_rows": 5000,
+    "fit_rows": 4000,
+    "holdout_rows": 1000,
+    "metrics": {
+      "accuracy": 0.913,
+      "macro_f1": 0.913,
+      "roc_auc": 0.9744
+    },
+    "artifact": "models/model.joblib"
+  },
+  "gui_feature": {
+    "mode": "explain",
+    "title": "Pest Outbreak Risk · Local explanation",
+    "description": "Inspect which feature changes move this model’s output for this input. This panel is tuned to Pest Outbreak Risk Model and its p064 pest outbreak risk model potassium ppm signal.",
+    "focus_feature": "p064_pest_outbreak_risk_model_potassium_ppm",
+    "mode_title": "Local explanation"
+  },
+  "gui": {
+    "frontend": "HTML/CSS/JavaScript",
+    "backend": "FastAPI",
+    "standalone": true
+  },
+  "model_artifact": "models/model.joblib",
+  "model_bytes": 385329
+}
